@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Mobstyle.css">
+</head>
+<body>
+
+      <div class="main">
+        <nav>
+            <div class="logo">
+                <h4>Yogi Mobiles</h4>
+            </div>
+            <div class="nav-link ">
+                <ul>
+                    
+                        <li><a href="#">Home</a> </li>
+                       <li> <a href="#">Phone</a></li>
+                       <li><a href="#">Accessories</a></li>
+                       <li><a href="cart.html">Cart</a></li>
+                    <li><a href="#">My all websits</a>
+                        <div class="submenu1">
+                            <ul>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="calculator.html">Calculator</a></li>
+                                <li class="hover-me"><a href="runingcar.html">Runing Car</a>
+                                    <li class="hover-me"><a href="#">Team,</a>
+
+                                <div class="submenu2">
+                                    <ul>
+                                        <li><a href="#">Mr. Yogesh</a></li>
+                                        <li><a href="#">Ms....</a></li>
+                                        </ul> 
+                                        </div>
+                            </li>
+                            
+                               
+                            </ul>
+                        </div>
+                   
+                    </li>
+                    <li><a href="#">Contact</a>
+                        <div class="submenu1">
+                            <ul>
+                                <li > <a href="#">Email <br>(jatyogesh325@gmail.com)</a></li>
+                                <li> <a href="#">mob.No. <br>9460332955 </a></li>
+                               <li><a href="https://instagram.com/yogesh_jat_rj?igshid=YzgyMTM2MGM=">instagram</a></li>
+        
+                            </ul>
+                        </div></li>
+                    
+        
+                </ul>
+                  
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="image/mobile.png" class="mobile">
+            <div id="circle">
+                <div class="feature one"> <img src="image/camera.png" alt="">
+                <div>
+                    <h1>Camera</h1>
+                    <p>12MP,wide Angle Lens</p>
+                </div></div>
+                <div class="feature two"> <img src="image/processor.png" alt="">
+                    <div>
+                        <h1>Processor</h1>
+                        <p>Snapdragon Octa-core 11nm</p>
+                    </div>
+                </div>
+                <div class="feature three"> <img src="image/display.png" alt="">
+                    <div>
+                        <h1>display</h1>
+                        <p> 6.5 inc.Full hd display</p>
+                    </div>
+                </div>
+                <div class="feature four"> <img src="image/battery.png" alt="">
+                    <div>
+                        <h1>Battery</h1>
+                        <p> 5000 MAH,720 Hours backup</p>
+                    </div></div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="image/arrow.png" id="upBtn">
+            <h3>features</h3>
+            <img src="image/arrow.png" id="downBtn">
+        </div>
+
+      </div>
+    <script >
+        var circle= document.getElementById("circle");
+        var upBtn =document.getElementById("upBtn");
+        var downBtn =document.getElementById("downBtn");
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+        upBtn.onclick =function(){
+           rotateSum =rotateValue +"rotate(-90deg)";
+           circle.style.transform =rotateSum;
+           rotateValue =rotateSum;
+        }
+        downBtn.onclick =function(){
+            rotateSum = rotateValue +"rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue =rotateSum;
+        }
+    </script>
+</body>
+</html>
